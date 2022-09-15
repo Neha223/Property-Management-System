@@ -14,12 +14,12 @@ export class AppComponent {
     {
       name: '2 BHK in Noida',
       size: '500 sq ft',
-      description: 'A large phone with one of the best screens'
+      description: 'A Budget friendly property with all amenities included. Nearby metro station find.'
     },
     {
       name: 'Bunglaw 1048 feet',
       size: '1000 sq ft',
-      description: 'A great phone with one of the best cameras'
+      description: 'A luxurious busget friendly property for big family with all amenities & park facing.'
     }
   ];
 
