@@ -237,14 +237,14 @@
 
 <div class="card-container" *ngFor="let property of properties; let i = index">
   <div class="card">
-    <span class="btn btn-danger float-right" (click)="deleteProperty(i)">&times;</span>
-    <h2 class="card-title">{{ property.name }}</h2>
-    <p><b>Description: </b>{{ property.description }}</p>
-    <p><b>Size: </b>{{property.size}}</p>
+    <span class="btn btn-danger float-right" (click)="deleteProperty(property.id)">&times;</span>
+    <h2 class="card-title">{{ property.fields.name }}</h2>
+    <p><b>Description: </b>{{ property.fields.description }}</p>
+    <p><b>Size: </b>{{property.fields.size}}</p>
    
   </div>
 </div>
-<div class="center-txt" *ngIf="properties.length == 0">
+<div class="center-txt" *ngIf="properties && properties.length == 0">
   <hr/>
   <h4>No Properties Available!</h4>
 </div>

@@ -5,6 +5,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AddPropertyComponent } from './add-property/add-property.component';
+import { NgxAirtableModule } from 'ngx-airtable';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { AddPropertyComponent } from './add-property/add-property.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgxAirtableModule.forRoot({ apiKey: 'keyNJRG6sgBGSkTkG' }),
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
